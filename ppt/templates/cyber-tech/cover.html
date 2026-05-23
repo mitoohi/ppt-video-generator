@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=1920"><link rel="stylesheet" href="base.css">
+<style>
+  .slide {
+    justify-content: center; align-items: center;
+    text-align: center; overflow: hidden;
+  }
+  /* 背景特效 */
+  .grid-overlay {
+    position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+    background-image:
+      linear-gradient(rgba(0,255,136,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,255,136,0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+    z-index: 0;
+  }
+  .glow-circle {
+    position: absolute; border-radius: 50%;
+    background: radial-gradient(circle, rgba(0,255,136,0.08), transparent);
+    z-index: 0;
+  }
+  .glow-circle.t { width: 600px; height: 600px; top: -200px; left: 50%; transform: translateX(-50%); }
+  .glow-circle.b { width: 400px; height: 400px; bottom: -100px; left: 50%; transform: translateX(-50%); }
+  .scan-line {
+    position: absolute; left: 0; right: 0; height: 1px;
+    background: linear-gradient(90deg, transparent, #00FF88, transparent);
+    box-shadow: 0 0 15px rgba(0,255,136,0.6);
+    top: 45%; opacity: 0.35; z-index: 1;
+  }
+  /* 四角 */
+  .corner {
+    position: absolute; width: 50px; height: 50px;
+    border-color: #00FF88; border-style: solid;
+    z-index: 2;
+  }
+  .corner.tl { top: 30px; left: 30px; border-width: 2px 0 0 2px; }
+  .corner.tr { top: 30px; right: 30px; border-width: 2px 2px 0 0; }
+  .corner.bl { bottom: 30px; left: 30px; border-width: 0 0 2px 2px; }
+  .corner.br { bottom: 30px; right: 30px; border-width: 0 2px 2px 0; }
+  /* 内容 */
+  .content-zone { position: relative; z-index: 3; transform: translateY(-50px); }
+  .label {
+    font-size: 16px; color: #00D4FF; font-weight: 600;
+    letter-spacing: 8px;
+    margin-bottom: 24px;
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .title {
+    font-size: 72px; font-weight: 800; line-height: 1.15;
+    max-width: 1400px;
+    color: #00FF88;
+    text-shadow: 0 0 40px rgba(0,255,136,0.35), 0 0 80px rgba(0,255,136,0.1);
+  }
+  .subtitle {
+    font-size: 33px; color: #00D4FF; margin-top: 28px;
+    max-width: 1100px;
+    text-shadow: 0 0 20px rgba(0,212,255,0.25);
+    font-family: 'JetBrains Mono', monospace; font-weight: 300;
+  }
+  .divider {
+    width: 100px; height: 2px;
+    background: linear-gradient(90deg, transparent, #00FF88, #00D4FF, transparent);
+    margin: 36px auto 0;
+    box-shadow: 0 0 10px rgba(0,255,136,0.4);
+  }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="grid-overlay"></div>
+  <div class="glow-circle t"></div><div class="glow-circle b"></div>
+  <div class="scan-line"></div>
+  <div class="corner tl"></div><div class="corner tr"></div>
+  <div class="corner bl"></div><div class="corner br"></div>
+  <div class="content-zone">
+    <div class="label">[ KNOWLEDGE.SHARE ]</div>
+    <h1 class="title">{{title}}</h1>
+    <p class="subtitle">{{subtitle}}</p>
+    <div class="divider"></div>
+  </div>
+</div>
+</body>
+</html>

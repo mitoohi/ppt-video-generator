@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=1920"><link rel="stylesheet" href="base.css">
+<style>
+  .slide { padding: 0; flex-direction: row; }
+  /* 左侧暖色面板 */
+  .left-panel {
+    width: 380px; flex-shrink: 0;
+    background: linear-gradient(180deg, rgba(240,122,95,0.08) 0%, rgba(242,204,143,0.06) 100%);
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    gap: 20px;
+    position: relative;
+  }
+  .left-panel::after {
+    content: ''; position: absolute; right: 0; top: 100px; bottom: 100px;
+    width: 1px;
+    background: linear-gradient(180deg, transparent, #E07A5F, transparent);
+    opacity: 0.3;
+  }
+  .left-panel .icon-circle {
+    width: 100px; height: 100px;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #E07A5F, #F2CC8F);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 59px; color: #FFF; font-weight: 700;
+    box-shadow: 0 8px 30px rgba(224,122,95,0.2);
+  }
+  .left-panel .page-label {
+    font-size: 31px; color: #E07A5F; font-weight: 600;
+    letter-spacing: 3px; text-transform: uppercase;
+  }
+  .left-panel .decor-dots {
+    display: flex; gap: 8px; margin-top: 12px;
+  }
+  .left-panel .decor-dots span {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: #E07A5F;
+  }
+  .left-panel .decor-dots span:nth-child(1) { opacity: 0.4; }
+  .left-panel .decor-dots span:nth-child(2) { opacity: 0.7; }
+  .left-panel .decor-dots span:nth-child(3) { opacity: 1.0; }
+  /* 右侧内容 */
+  .right-content {
+    flex: 1; display: flex; flex-direction: column;
+    justify-content: center;
+    padding: 90px 80px 90px 70px;
+  }
+  .page-title {
+    font-size: 65px; font-weight: 700;
+    font-family: 'Noto Serif SC', serif;
+    line-height: 1.25; margin-bottom: 52px;
+  }
+  .page-title::after {
+    content: '';
+    display: block; width: 60px; height: 3px;
+    background: #E07A5F; margin-top: 18px;
+    border-radius: 2px;
+  }
+  .bullets { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 24px; }
+  .bullets li {
+    font-size: 48px; line-height: 1.6;
+    padding-left: 38px; position: relative;
+    color: #4A3B36;
+  }
+  .bullets li::before {
+    content: '';
+    position: absolute; left: 0; top: 13px;
+    width: 16px; height: 16px;
+    background: #E07A5F; border-radius: 4px;
+    opacity: 0.85;
+  }
+  /* 底部装饰 */
+  .decor-leaf {
+    position: absolute; bottom: 150px; right: 60px;
+    width: 70px; height: 70px;
+    border: 2px solid #F2CC8F;
+    border-radius: 50% 0;
+    opacity: 0.25;
+    transform: rotate(135deg);
+  }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="slide-number">{{slide_number}}</div>
+  <div class="left-panel">
+    <div class="icon-circle">{{id_num}}</div>
+    <div class="page-label">要点</div>
+    <div class="decor-dots"><span></span><span></span><span></span></div>
+  </div>
+  <div class="right-content">
+    <h1 class="page-title">{{title}}</h1>
+    <ul class="bullets">{{bullets}}</ul>
+    {{table}}
+  </div>
+  <div class="decor-leaf"></div>
+  <div class="subtitle-safe-zone"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=1920"><link rel="stylesheet" href="base.css">
+<style>
+  .slide { justify-content: center; align-items: center; text-align: center; }
+  .section-num {
+    font-size: 100px; font-weight: 800;
+    font-family: 'JetBrains Mono', monospace;
+    color: rgba(0,255,136,0.04);
+    line-height: 0.9; transform: translateY(-3px); }
+  .section-title {
+    font-size: 60px; font-weight: 700;
+    margin-top: -20px;
+    color: #00FF88;
+    text-shadow: 0 0 25px rgba(0,255,136,0.3);
+  }
+  .section-tag {
+    font-size: 16px; color: #00D4FF; font-weight: 600;
+    letter-spacing: 6px;
+    font-family: 'JetBrains Mono', monospace;
+    margin-bottom: 20px;
+  }
+  .section-line {
+    width: 120px; height: 2px;
+    background: linear-gradient(90deg, #00FF88, #00D4FF);
+    margin: 28px auto 0;
+    box-shadow: 0 0 10px rgba(0,255,136,0.5);
+  }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="section-tag">// SECTION {{id_large}}</div>
+  <div class="section-num">{{id_large}}</div>
+  <h1 class="section-title">{{title}}</h1>
+  <div class="section-line"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=1920"><link rel="stylesheet" href="base.css">
+<style>
+  .slide { justify-content: center; align-items: center; text-align: center; }
+  .section-num {
+    font-size: 100px; font-weight: 700;
+    font-family: 'Noto Serif SC', serif;
+    color: rgba(224,122,95,0.06);
+    line-height: 0.9; transform: translateY(-3px); }
+  .section-title {
+    font-size: 60px; font-weight: 700;
+    font-family: 'Noto Serif SC', serif;
+    margin-top: -20px;
+  }
+  .section-decor {
+    width: 80px; height: 3px;
+    background: linear-gradient(90deg, #E07A5F, #F2CC8F);
+    margin: 28px auto 0; border-radius: 2px;
+  }
+  .section-sub { font-size: 20px; color: #8B7E74; margin-top: 16px; letter-spacing: 4px; }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="section-num">{{id_large}}</div>
+  <h1 class="section-title">{{title}}</h1>
+  <p class="section-sub">第{{id_large}}部分</p>
+  <div class="section-decor"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=1920"><link rel="stylesheet" href="base.css">
+<style>
+  .slide { justify-content: center; align-items: center; text-align: center; padding-bottom: 190px; }
+  .quote-icon {
+    width: 80px; height: 80px; border-radius: 50%;
+    background: rgba(59,130,246,0.1);
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 32px;
+    font-size: 68px; color: #3B82F6; font-family: Georgia, serif; line-height: 1;
+  }
+  .quote-text {
+    font-size: 66px; font-weight: 600; line-height: 1.45;
+    max-width: 1300px; color: #E8ECF1;
+  }
+  .quote-line {
+    width: 60px; height: 2px; background: #3B82F6;
+    margin: 32px auto; border-radius: 1px;
+  }
+  .quote-source { font-size: 46px; color: #64748B; }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="quote-icon">"</div>
+  <p class="quote-text">{{text}}</p>
+  <div class="quote-line"></div>
+  <p class="quote-source">{{source}}</p>
+</div>
+</body>
+</html>

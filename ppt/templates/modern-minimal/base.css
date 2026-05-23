@@ -1,0 +1,50 @@
+/* modern-minimal — 几何极简 + 蓝色科技感 */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Noto+Sans+SC:wght@300;400;500;700&display=swap');
+
+html, body {
+  width: 1920px; height: 1080px; overflow: hidden;
+  background: #0A0E17;
+  color: #E8ECF1;
+  font-family: 'Inter', 'Noto Sans SC', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.slide {
+  width: 1920px; height: 1080px;
+  padding: 90px 100px;
+  display: flex; flex-direction: column;
+  position: relative;
+}
+
+.accent { color: #3B82F6; }
+.accent-light { color: #60A5FA; }
+.muted { color: #64748B; }
+.subtitle-safe-zone { height: 130px; flex-shrink: 0; }
+
+/* 页码 */
+.slide-number {
+  position: absolute; top: 48px; right: 80px;
+  font-size: 15px; font-weight: 600;
+  color: #3B82F6;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 2px;
+}
+
+/* 背景纹理和装饰 */
+body::before {
+  content: '';
+  position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+  background:
+    radial-gradient(ellipse at 20% 20%, rgba(59,130,246,0.06) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 80%, rgba(59,130,246,0.04) 0%, transparent 50%);
+  pointer-events: none; z-index: 0;
+}
+
+.slide { position: relative; z-index: 1; }
+
+/* 表格 */
+table { border-collapse: collapse; width: 100%; margin-top: 24px; }
+th, td { font-size: 26px; padding: 14px 22px; text-align: left; border-bottom: 1px solid rgba(59,130,246,0.15); }
+th { color: #3B82F6; font-weight: 700; font-size: 22px; text-transform: uppercase; letter-spacing: 1px; }

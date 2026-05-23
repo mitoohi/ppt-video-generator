@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=1920"><link rel="stylesheet" href="base.css">
+<style>
+  .slide { justify-content: center; align-items: center; text-align: center; }
+  .glow { position: absolute; border-radius: 50%;
+    background: radial-gradient(circle, rgba(0,255,136,0.06), transparent);
+    width: 500px; height: 500px; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 0; }
+  .ending-tag {
+    font-size: 15px; color: #00D4FF; font-weight: 600;
+    letter-spacing: 6px;
+    font-family: 'JetBrains Mono', monospace;
+    margin-bottom: 24px; position: relative; z-index: 1;
+  }
+  .ending-title {
+    font-size: 62px; font-weight: 700; margin-bottom: 44px;
+    color: #00FF88;
+    text-shadow: 0 0 25px rgba(0,255,136,0.3);
+    position: relative; z-index: 1;
+  }
+  .ending-bullets { list-style: none; padding: 0; position: relative; z-index: 1; }
+  .ending-bullets li { font-size: 28px; color: #52525B; line-height: 2.2; font-family: 'JetBrains Mono', monospace; }
+  .ending-bullets li::before { content: '// '; color: #00D4FF; }
+  .ending-line { width: 80px; height: 1px; background: #00FF88; margin: 36px auto 0;
+                 box-shadow: 0 0 8px rgba(0,255,136,0.3); position: relative; z-index: 1; }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="glow"></div>
+  <div class="ending-tag">/* END OF STREAM */</div>
+  <h1 class="ending-title">{{title}}</h1>
+  <ul class="ending-bullets">{{bullets}}</ul>
+  <div class="ending-line"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=1920"><link rel="stylesheet" href="base.css">
+<style>
+  .slide { justify-content: center; align-items: center; text-align: center; }
+  .section-num {
+    font-size: 100px; font-weight: 800; color: rgba(59,130,246,0.06);
+    line-height: 0.9; font-family: 'Inter', sans-serif; transform: translateY(-3px); }
+  .section-title { font-size: 62px; font-weight: 700; margin-top: -20px; letter-spacing: -1px; }
+  .section-line {
+    width: 100px; height: 3px;
+    background: linear-gradient(90deg, transparent, #3B82F6, transparent);
+    margin: 32px auto 0; border-radius: 2px;
+  }
+  .section-sub { font-size: 22px; color: #64748B; margin-top: 20px; letter-spacing: 3px; }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="section-num">{{id_large}}</div>
+  <h1 class="section-title">{{title}}</h1>
+  <p class="section-sub">PART {{id_large}}</p>
+  <div class="section-line"></div>
+</div>
+</body>
+</html>

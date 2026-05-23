@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=1920"><link rel="stylesheet" href="base.css">
+<style>
+  .slide { padding-top: 85px; }
+  .main-grid { display: flex; gap: 0; height: calc(1080px - 170px - 130px); }
+  /* 左侧终端面板 */
+  .left-terminal {
+    width: 350px; flex-shrink: 0;
+    background: rgba(0,255,136,0.025);
+    border-right: 1px solid rgba(0,255,136,0.08);
+    border-radius: 0 0 0 12px;
+    display: flex; flex-direction: column;
+    padding: 40px 30px;
+    gap: 16px;
+    position: relative;
+  }
+  .left-terminal::before {
+    content: 'SYS.LOG';
+    font-size: 28px; color: #00D4FF; font-weight: 600;
+    letter-spacing: 4px;
+    font-family: 'JetBrains Mono', monospace;
+    margin-bottom: 12px;
+  }
+  .left-terminal .log-line {
+    font-size: 29px; color: #52525B;
+    font-family: 'JetBrains Mono', monospace;
+    line-height: 1.8;
+  }
+  .left-terminal .log-line.active { color: #00FF88; }
+  /* 右侧内容 */
+  .right-main { flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 0 0 0 70px; }
+  .page-header { display: flex; align-items: center; gap: 16px; margin-bottom: 48px; }
+  .header-tag {
+    font-size: 31px; color: #00FF88; font-weight: 700;
+    font-family: 'JetBrains Mono', monospace;
+    border: 1px solid rgba(0,255,136,0.2);
+    padding: 6px 16px;
+  }
+  .page-title {
+    font-size: 63px; font-weight: 700; line-height: 1.25;
+    color: #E4E4E7;
+  }
+  .bullets { list-style: none; padding: 0 0 0 97px; display: flex; flex-direction: column; gap: 22px; }
+  .bullets li {
+    font-size: 48px; line-height: 1.55;
+    padding-left: 36px; position: relative;
+    color: #A1A1AA;
+  }
+  .bullets li::before {
+    content: '>';
+    position: absolute; left: 0; top: 0;
+    color: #00FF88; font-weight: 700;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 41px;
+  }
+  /* 右下角终端装饰 */
+  .term-box {
+    position: absolute; bottom: 160px; right: 60px;
+    border: 1px solid rgba(0,255,136,0.1);
+    padding: 12px 18px;
+    font-size: 28px; color: #52525B;
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .term-box .green { color: #00FF88; }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="slide-number">{{slide_number}}</div>
+  <div class="main-grid">
+    <div class="left-terminal">
+      <div class="log-line">[INFO] Loading module...</div>
+      <div class="log-line active">[OK] Module {{id_num}} active</div>
+      <div class="log-line">[INFO] Parsing content...</div>
+      <div class="log-line">[DBG] Frame {{id_num}}/{{total}}</div>
+    </div>
+    <div class="right-main">
+      <div class="page-header">
+        <span class="header-tag">{{id_tag}}</span>
+        <h1 class="page-title">{{title}}</h1>
+      </div>
+      <ul class="bullets">{{bullets}}</ul>
+      {{table}}
+    </div>
+  </div>
+  <div class="term-box">$ stream --<span class="green">active</span> --frame={{id_num}}</div>
+  <div class="subtitle-safe-zone"></div>
+</div>
+</body>
+</html>

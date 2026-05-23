@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=1920"><link rel="stylesheet" href="base.css">
+<style>
+  .slide { justify-content: center; align-items: center; text-align: center; }
+  .bg-shape { position: absolute; border-radius: 50%;
+    background: radial-gradient(circle, rgba(240,122,95,0.06), transparent);
+    width: 500px; height: 500px; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 0; }
+  .ending-title {
+    font-size: 62px; font-weight: 700;
+    font-family: 'Noto Serif SC', serif;
+    margin-bottom: 44px; position: relative; z-index: 1;
+  }
+  .ending-bullets { list-style: none; padding: 0; position: relative; z-index: 1; }
+  .ending-bullets li { font-size: 30px; color: #8B7E74; line-height: 2.2; }
+  .ending-decor {
+    width: 60px; height: 2px;
+    background: linear-gradient(90deg, #E07A5F, #F2CC8F);
+    margin: 36px auto 0; border-radius: 1px;
+    position: relative; z-index: 1;
+  }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="bg-shape"></div>
+  <h1 class="ending-title">{{title}}</h1>
+  <ul class="ending-bullets">{{bullets}}</ul>
+  <div class="ending-decor"></div>
+</div>
+</body>
+</html>

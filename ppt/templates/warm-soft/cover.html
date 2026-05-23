@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=1920"><link rel="stylesheet" href="base.css">
+<style>
+  .slide { justify-content: center; align-items: center; text-align: center; overflow: hidden; }
+  .bg-shape {
+    position: absolute; border-radius: 50%; z-index: 0;
+  }
+  .bg-shape.s1 { width: 500px; height: 500px; background: radial-gradient(circle, rgba(240,122,95,0.06), transparent);
+                top: -150px; left: 100px; }
+  .bg-shape.s2 { width: 350px; height: 350px; background: radial-gradient(circle, rgba(242,204,143,0.06), transparent);
+                bottom: 50px; right: 120px; }
+  .bg-shape.s3 { width: 200px; height: 200px; background: radial-gradient(circle, rgba(224,122,95,0.05), transparent);
+                bottom: 200px; left: 50%; transform: translateX(-50%); }
+  .cover-decor {
+    position: absolute; z-index: 1;
+    border: 2px solid #F2CC8F;
+    border-radius: 50% 0;
+    opacity: 0.18;
+  }
+  .cover-decor.d1 { width: 90px; height: 90px; top: 60px; left: 80px; transform: rotate(-45deg); }
+  .cover-decor.d2 { width: 60px; height: 60px; bottom: 180px; right: 100px; transform: rotate(135deg); }
+  .cover-decor.d3 { width: 50px; height: 50px; top: 120px; right: 160px; transform: rotate(90deg); }
+  .content-zone { position: relative; z-index: 2; transform: translateY(-50px); }
+  .label { font-size: 17px; color: #E07A5F; font-weight: 600; letter-spacing: 6px;
+           margin-bottom: 24px; }
+  .title {
+    font-size: 74px; font-weight: 700;
+    font-family: 'Noto Serif SC', serif;
+    line-height: 1.2; max-width: 1400px;
+  }
+  .subtitle { font-size: 34px; color: #8B7E74; margin-top: 28px; max-width: 1100px; font-weight: 300; }
+  .decor-line {
+    width: 100px; height: 3px;
+    background: linear-gradient(90deg, #E07A5F, #F2CC8F);
+    margin: 36px auto 0; border-radius: 2px;
+  }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="bg-shape s1"></div><div class="bg-shape s2"></div><div class="bg-shape s3"></div>
+  <div class="cover-decor d1"></div><div class="cover-decor d2"></div><div class="cover-decor d3"></div>
+  <div class="content-zone">
+    <div class="label">知 识 分 享</div>
+    <h1 class="title">{{title}}</h1>
+    <p class="subtitle">{{subtitle}}</p>
+    <div class="decor-line"></div>
+  </div>
+</div>
+</body>
+</html>

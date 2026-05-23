@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=1920"><link rel="stylesheet" href="base.css">
+<style>
+  .slide { justify-content: center; align-items: center; text-align: center; }
+  .glow { position: absolute; border-radius: 50%; background: radial-gradient(circle, rgba(59,130,246,0.12), transparent);
+          width: 600px; height: 600px; z-index: 0; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+  .ending-title { font-size: 64px; font-weight: 800; margin-bottom: 48px; position: relative; z-index: 1; }
+  .ending-bullets { list-style: none; padding: 0; position: relative; z-index: 1; }
+  .ending-bullets li { font-size: 30px; color: #94A3B8; line-height: 2.2; }
+  .ending-line { width: 60px; height: 2px; background: #3B82F6; margin: 40px auto 0; border-radius: 1px; position: relative; z-index: 1; }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="glow"></div>
+  <h1 class="ending-title">{{title}}</h1>
+  <ul class="ending-bullets">{{bullets}}</ul>
+  <div class="ending-line"></div>
+</div>
+</body>
+</html>

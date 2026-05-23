@@ -1,0 +1,619 @@
+{
+  "meta": {
+    "fade_duration": 0.6,
+    "fps": 30,
+    "total_audio_duration": 139.032,
+    "total_video_duration": 134.232,
+    "segment_count": 9,
+    "subtitle_count": 65,
+    "resolution": {
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "segments": [
+    {
+      "slide_id": 1,
+      "image": "ppt/images/slide-001.png",
+      "audio": "audio/slide-001.mp3",
+      "narration": "大家好，今天给你看一个我做的工具。只需告诉它一个主题，就能自动生成一条完整的口播知识分享视频——从脚本、PPT、配音到字幕，全自动完成。",
+      "audio_duration": 12.936,
+      "audio_start": 0.0,
+      "audio_end": 12.936
+    },
+    {
+      "slide_id": 2,
+      "image": "ppt/images/slide-002.png",
+      "audio": "audio/slide-002.mp3",
+      "narration": "先说说痛点。做一个知识分享视频，传统流程至少四步：写脚本磨半天，排版 PPT 又半天，录音一旦嘴瓢就得重来，最后剪辑还得手动对齐音画。一个三分钟的视频，前前后后花三四个小时很正常。",
+      "audio_duration": 18.6,
+      "audio_start": 12.936,
+      "audio_end": 31.536
+    },
+    {
+      "slide_id": 3,
+      "image": "ppt/images/slide-003.png",
+      "audio": "audio/slide-003.mp3",
+      "narration": "那有没有办法把这件事全部自动化？我基于 Claude Code Skill 机制，做了这样一个工具。",
+      "audio_duration": 7.488,
+      "audio_start": 31.536,
+      "audio_end": 39.024
+    },
+    {
+      "slide_id": 4,
+      "image": "ppt/images/slide-004.png",
+      "audio": "audio/slide-004.mp3",
+      "narration": "工作流的第一步是智能提问。它会像记者一样，通过四轮十多个问题，帮你明确主题、受众、内容结构和视觉风格。你只需要回答选择题和简单文本，不需要从头构思。",
+      "audio_duration": 15.864,
+      "audio_start": 39.024,
+      "audio_end": 54.888
+    },
+    {
+      "slide_id": 5,
+      "image": "ppt/images/slide-005.png",
+      "audio": "audio/slide-005.mp3",
+      "narration": "第二步是自动管线。脚本确定后，HTML 模板渲染成高清 PNG，edge-tts 生成带词级时间戳的配音，最后用 ffmpeg 合成——页间淡入淡出转场，字幕直接烧入视频，音画精准同步。",
+      "audio_duration": 17.136,
+      "audio_start": 54.888,
+      "audio_end": 72.024
+    },
+    {
+      "slide_id": 6,
+      "image": "ppt/images/slide-006.png",
+      "audio": "audio/slide-006.mp3",
+      "narration": "目前内置了三套视觉模板。现代极简适合技术内容，温暖柔和适合人文教育，赛博科技就是你现在看到的这套。每套模板五种页型，覆盖封面、章节、正文、金句和收尾。",
+      "audio_duration": 18.0,
+      "audio_start": 72.024,
+      "audio_end": 90.024
+    },
+    {
+      "slide_id": 7,
+      "image": "ppt/images/slide-007.png",
+      "audio": "audio/slide-007.mp3",
+      "narration": "这个工具有一个核心理念：所有中间产物都是可读文件。slides.json 控制内容，word_timings.json 控制时间线。你想调某页的口播，改一句话重新跑就行，不用从头再来。",
+      "audio_duration": 16.8,
+      "audio_start": 90.024,
+      "audio_end": 106.824
+    },
+    {
+      "slide_id": 8,
+      "image": "ppt/images/slide-008.png",
+      "audio": "audio/slide-008.mp3",
+      "narration": "它不是市面上那种套模板的在线工具。这是一条开源的代码管线，你在本地跑，数据不外传。每条视频 1080p 输出，中间每个环节都可以手动微调。你控制一切。",
+      "audio_duration": 16.272,
+      "audio_start": 106.824,
+      "audio_end": 123.096
+    },
+    {
+      "slide_id": 9,
+      "image": "ppt/images/slide-009.png",
+      "audio": "audio/slide-009.mp3",
+      "narration": "获取方式很简单。这是一个开源的 Claude Code Skill。装好依赖后，在 Claude Code 里直接说——做一期讲某主题的口播视频——剩下的全部自动完成。我是 Forward，下期见。",
+      "audio_duration": 15.936,
+      "audio_start": 123.096,
+      "audio_end": 139.032
+    }
+  ],
+  "subtitles": [
+    {
+      "index": 1,
+      "text": "大家好，",
+      "start": 0.1,
+      "end": 0.835,
+      "duration": 0.735,
+      "belongs_to_slide": 1
+    },
+    {
+      "index": 2,
+      "text": "今天给你看一个我做的工具。",
+      "start": 0.835,
+      "end": 3.225,
+      "duration": 2.39,
+      "belongs_to_slide": 1
+    },
+    {
+      "index": 3,
+      "text": "只需告诉它一个主题，",
+      "start": 3.175,
+      "end": 5.077,
+      "duration": 1.902,
+      "belongs_to_slide": 1
+    },
+    {
+      "index": 4,
+      "text": "就能自动生成一条完整的口播知识分享视频——从脚本、",
+      "start": 5.077,
+      "end": 9.832,
+      "duration": 4.755,
+      "belongs_to_slide": 1
+    },
+    {
+      "index": 5,
+      "text": "PPT、",
+      "start": 9.832,
+      "end": 10.593,
+      "duration": 0.761,
+      "belongs_to_slide": 1
+    },
+    {
+      "index": 6,
+      "text": "配音到字幕，",
+      "start": 10.593,
+      "end": 11.734,
+      "duration": 1.141,
+      "belongs_to_slide": 1
+    },
+    {
+      "index": 7,
+      "text": "全自动完成。",
+      "start": 11.734,
+      "end": 12.875,
+      "duration": 1.141,
+      "belongs_to_slide": 1
+    },
+    {
+      "index": 8,
+      "text": "先说说痛点。",
+      "start": 13.036,
+      "end": 14.611,
+      "duration": 1.575,
+      "belongs_to_slide": 2
+    },
+    {
+      "index": 9,
+      "text": "做一个知识分享视频，",
+      "start": 14.561,
+      "end": 16.5,
+      "duration": 1.939,
+      "belongs_to_slide": 2
+    },
+    {
+      "index": 10,
+      "text": "传统流程至少四步：",
+      "start": 16.5,
+      "end": 18.245,
+      "duration": 1.745,
+      "belongs_to_slide": 2
+    },
+    {
+      "index": 11,
+      "text": "写脚本磨半天，",
+      "start": 18.244,
+      "end": 19.601,
+      "duration": 1.357,
+      "belongs_to_slide": 2
+    },
+    {
+      "index": 12,
+      "text": "排版 PPT 又半天，",
+      "start": 19.601,
+      "end": 21.733,
+      "duration": 2.132,
+      "belongs_to_slide": 2
+    },
+    {
+      "index": 13,
+      "text": "录音一旦嘴瓢就得重来，",
+      "start": 21.734,
+      "end": 23.866,
+      "duration": 2.132,
+      "belongs_to_slide": 2
+    },
+    {
+      "index": 14,
+      "text": "最后剪辑还得手动对齐音画。",
+      "start": 23.866,
+      "end": 26.386,
+      "duration": 2.52,
+      "belongs_to_slide": 2
+    },
+    {
+      "index": 15,
+      "text": "一个三分钟的视频，",
+      "start": 26.386,
+      "end": 28.382,
+      "duration": 1.996,
+      "belongs_to_slide": 2
+    },
+    {
+      "index": 16,
+      "text": "前前后后花三四个小时很正常。",
+      "start": 28.382,
+      "end": 31.486,
+      "duration": 3.104,
+      "belongs_to_slide": 2
+    },
+    {
+      "index": 17,
+      "text": "那有没有办法把这件事全部自动化？",
+      "start": 31.636,
+      "end": 34.948,
+      "duration": 3.312,
+      "belongs_to_slide": 3
+    },
+    {
+      "index": 18,
+      "text": "我基于 Claude Code Skill 机制，",
+      "start": 34.898,
+      "end": 37.894,
+      "duration": 2.996,
+      "belongs_to_slide": 3
+    },
+    {
+      "index": 19,
+      "text": "做了这样一个工具。",
+      "start": 37.894,
+      "end": 38.973,
+      "duration": 1.079,
+      "belongs_to_slide": 3
+    },
+    {
+      "index": 20,
+      "text": "工作流的第一步是智能提问。",
+      "start": 39.124,
+      "end": 41.736,
+      "duration": 2.612,
+      "belongs_to_slide": 4
+    },
+    {
+      "index": 21,
+      "text": "它会像记者一样，",
+      "start": 41.686,
+      "end": 43.394,
+      "duration": 1.708,
+      "belongs_to_slide": 4
+    },
+    {
+      "index": 22,
+      "text": "通过四轮十多个问题，",
+      "start": 43.394,
+      "end": 45.529,
+      "duration": 2.135,
+      "belongs_to_slide": 4
+    },
+    {
+      "index": 23,
+      "text": "帮你明确主题、",
+      "start": 45.529,
+      "end": 47.023,
+      "duration": 1.494,
+      "belongs_to_slide": 4
+    },
+    {
+      "index": 24,
+      "text": "受众、",
+      "start": 47.023,
+      "end": 47.663,
+      "duration": 0.64,
+      "belongs_to_slide": 4
+    },
+    {
+      "index": 25,
+      "text": "内容结构和视觉风格。",
+      "start": 47.664,
+      "end": 49.799,
+      "duration": 2.135,
+      "belongs_to_slide": 4
+    },
+    {
+      "index": 26,
+      "text": "你只需要回答选择题和简单文本，",
+      "start": 49.799,
+      "end": 53.076,
+      "duration": 3.277,
+      "belongs_to_slide": 4
+    },
+    {
+      "index": 27,
+      "text": "不需要从头构思。",
+      "start": 53.076,
+      "end": 54.824,
+      "duration": 1.748,
+      "belongs_to_slide": 4
+    },
+    {
+      "index": 28,
+      "text": "第二步是自动管线。",
+      "start": 54.988,
+      "end": 57.075,
+      "duration": 2.087,
+      "belongs_to_slide": 5
+    },
+    {
+      "index": 29,
+      "text": "脚本确定后，",
+      "start": 57.025,
+      "end": 58.093,
+      "duration": 1.068,
+      "belongs_to_slide": 5
+    },
+    {
+      "index": 30,
+      "text": "HTML 模板渲染成高清 PNG，",
+      "start": 58.093,
+      "end": 61.119,
+      "duration": 3.026,
+      "belongs_to_slide": 5
+    },
+    {
+      "index": 31,
+      "text": "edge-tts 生成带词级时间戳的配音，",
+      "start": 61.118,
+      "end": 64.855,
+      "duration": 3.737,
+      "belongs_to_slide": 5
+    },
+    {
+      "index": 32,
+      "text": "最后用 ffmpeg 合成——页间淡入淡出转场，",
+      "start": 64.856,
+      "end": 69.127,
+      "duration": 4.271,
+      "belongs_to_slide": 5
+    },
+    {
+      "index": 33,
+      "text": "字幕直接烧入视频，",
+      "start": 69.127,
+      "end": 70.729,
+      "duration": 1.602,
+      "belongs_to_slide": 5
+    },
+    {
+      "index": 34,
+      "text": "音画精准同步。",
+      "start": 70.729,
+      "end": 71.975,
+      "duration": 1.246,
+      "belongs_to_slide": 5
+    },
+    {
+      "index": 35,
+      "text": "目前内置了三套视觉模板。",
+      "start": 72.124,
+      "end": 75.011,
+      "duration": 2.887,
+      "belongs_to_slide": 6
+    },
+    {
+      "index": 36,
+      "text": "现代极简适合技术内容，",
+      "start": 74.961,
+      "end": 77.351,
+      "duration": 2.39,
+      "belongs_to_slide": 6
+    },
+    {
+      "index": 37,
+      "text": "温暖柔和适合人文教育，",
+      "start": 77.351,
+      "end": 79.741,
+      "duration": 2.39,
+      "belongs_to_slide": 6
+    },
+    {
+      "index": 38,
+      "text": "赛博科技就是你现在看到的这套。",
+      "start": 79.74,
+      "end": 82.999,
+      "duration": 3.259,
+      "belongs_to_slide": 6
+    },
+    {
+      "index": 39,
+      "text": "每套模板五种页型，",
+      "start": 82.999,
+      "end": 85.409,
+      "duration": 2.41,
+      "belongs_to_slide": 6
+    },
+    {
+      "index": 40,
+      "text": "覆盖封面、",
+      "start": 85.409,
+      "end": 86.748,
+      "duration": 1.339,
+      "belongs_to_slide": 6
+    },
+    {
+      "index": 41,
+      "text": "章节、",
+      "start": 86.748,
+      "end": 87.551,
+      "duration": 0.803,
+      "belongs_to_slide": 6
+    },
+    {
+      "index": 42,
+      "text": "正文、",
+      "start": 87.551,
+      "end": 88.354,
+      "duration": 0.803,
+      "belongs_to_slide": 6
+    },
+    {
+      "index": 43,
+      "text": "金句和收尾。",
+      "start": 88.354,
+      "end": 89.961,
+      "duration": 1.607,
+      "belongs_to_slide": 6
+    },
+    {
+      "index": 44,
+      "text": "这个工具有一个核心理念：",
+      "start": 90.124,
+      "end": 92.626,
+      "duration": 2.502,
+      "belongs_to_slide": 7
+    },
+    {
+      "index": 45,
+      "text": "所有中间产物都是可读文件。",
+      "start": 92.626,
+      "end": 95.336,
+      "duration": 2.71,
+      "belongs_to_slide": 7
+    },
+    {
+      "index": 46,
+      "text": "slides.",
+      "start": 95.286,
+      "end": 96.368,
+      "duration": 1.082,
+      "belongs_to_slide": 7
+    },
+    {
+      "index": 47,
+      "text": "json 控制内容，",
+      "start": 96.368,
+      "end": 97.914,
+      "duration": 1.546,
+      "belongs_to_slide": 7
+    },
+    {
+      "index": 48,
+      "text": "word_timings.",
+      "start": 97.914,
+      "end": 99.924,
+      "duration": 2.01,
+      "belongs_to_slide": 7
+    },
+    {
+      "index": 49,
+      "text": "json 控制时间线。",
+      "start": 99.924,
+      "end": 101.624,
+      "duration": 1.7,
+      "belongs_to_slide": 7
+    },
+    {
+      "index": 50,
+      "text": "你想调某页的口播，",
+      "start": 101.624,
+      "end": 103.402,
+      "duration": 1.778,
+      "belongs_to_slide": 7
+    },
+    {
+      "index": 51,
+      "text": "改一句话重新跑就行，",
+      "start": 103.402,
+      "end": 105.378,
+      "duration": 1.976,
+      "belongs_to_slide": 7
+    },
+    {
+      "index": 52,
+      "text": "不用从头再来。",
+      "start": 105.378,
+      "end": 106.761,
+      "duration": 1.383,
+      "belongs_to_slide": 7
+    },
+    {
+      "index": 53,
+      "text": "它不是市面上那种套模板的在线工具。",
+      "start": 106.924,
+      "end": 110.536,
+      "duration": 3.612,
+      "belongs_to_slide": 8
+    },
+    {
+      "index": 54,
+      "text": "这是一条开源的代码管线，",
+      "start": 110.486,
+      "end": 113.005,
+      "duration": 2.519,
+      "belongs_to_slide": 8
+    },
+    {
+      "index": 55,
+      "text": "你在本地跑，",
+      "start": 113.005,
+      "end": 114.264,
+      "duration": 1.259,
+      "belongs_to_slide": 8
+    },
+    {
+      "index": 56,
+      "text": "数据不外传。",
+      "start": 114.264,
+      "end": 115.523,
+      "duration": 1.259,
+      "belongs_to_slide": 8
+    },
+    {
+      "index": 57,
+      "text": "每条视频 1080p 输出，",
+      "start": 115.524,
+      "end": 118.28,
+      "duration": 2.756,
+      "belongs_to_slide": 8
+    },
+    {
+      "index": 58,
+      "text": "中间每个环节都可以手动微调。",
+      "start": 118.28,
+      "end": 121.036,
+      "duration": 2.756,
+      "belongs_to_slide": 8
+    },
+    {
+      "index": 59,
+      "text": "你控制一切。",
+      "start": 121.036,
+      "end": 123.036,
+      "duration": 2.0,
+      "belongs_to_slide": 8
+    },
+    {
+      "index": 60,
+      "text": "获取方式很简单。",
+      "start": 123.196,
+      "end": 125.271,
+      "duration": 2.075,
+      "belongs_to_slide": 9
+    },
+    {
+      "index": 61,
+      "text": "这是一个开源的 Claude Code Skill。",
+      "start": 125.221,
+      "end": 128.258,
+      "duration": 3.037,
+      "belongs_to_slide": 9
+    },
+    {
+      "index": 62,
+      "text": "装好依赖后，",
+      "start": 128.258,
+      "end": 129.184,
+      "duration": 0.926,
+      "belongs_to_slide": 9
+    },
+    {
+      "index": 63,
+      "text": "在 Claude Code 里直接说——做一期讲某主题的口播视频——剩下的全部自动完成。",
+      "start": 129.184,
+      "end": 135.971,
+      "duration": 6.787,
+      "belongs_to_slide": 9
+    },
+    {
+      "index": 64,
+      "text": "我是 Forward，",
+      "start": 135.971,
+      "end": 138.18,
+      "duration": 2.209,
+      "belongs_to_slide": 9
+    },
+    {
+      "index": 65,
+      "text": "下期见。",
+      "start": 138.18,
+      "end": 138.983,
+      "duration": 0.803,
+      "belongs_to_slide": 9
+    }
+  ]
+}

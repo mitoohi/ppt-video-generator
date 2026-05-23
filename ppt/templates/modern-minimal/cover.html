@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=1920"><link rel="stylesheet" href="base.css">
+<style>
+  .slide {
+    justify-content: center; align-items: center;
+    text-align: center; overflow: hidden;
+  }
+  .glow { position: absolute; border-radius: 50%; z-index: 0; }
+  .glow.g1 { width: 700px; height: 700px; background: radial-gradient(circle, rgba(59,130,246,0.1) 0%, transparent 60%);
+            top: -250px; left: -200px; }
+  .glow.g2 { width: 500px; height: 500px; background: radial-gradient(circle, rgba(96,165,250,0.07) 0%, transparent 60%);
+            bottom: -150px; right: -100px; }
+  .cover-frame {
+    position: absolute; top: 70px; left: 70px; right: 70px; bottom: 70px;
+    border: 1px solid rgba(59,130,246,0.12); border-radius: 24px;
+    z-index: 1;
+  }
+  .corner { position: absolute; z-index: 2; }
+  .corner::before, .corner::after { content: ''; position: absolute; background: #3B82F6; border-radius: 2px; }
+  .corner.tl { top: 50px; left: 50px; }
+  .corner.tl::before { width: 40px; height: 3px; top: 0; left: 0; }
+  .corner.tl::after { width: 3px; height: 40px; top: 0; left: 0; }
+  .corner.br { bottom: 50px; right: 50px; }
+  .corner.br::before { width: 40px; height: 3px; bottom: 0; right: 0; }
+  .corner.br::after { width: 3px; height: 40px; bottom: 0; right: 0; }
+  .content-zone { position: relative; z-index: 3; transform: translateY(-50px); }
+  .label { font-size: 18px; color: #3B82F6; font-weight: 600; letter-spacing: 6px;
+           text-transform: uppercase; margin-bottom: 24px; }
+  .title { font-size: 76px; font-weight: 800; line-height: 1.15; max-width: 1400px; letter-spacing: -1px; }
+  .subtitle { font-size: 34px; color: #94A3B8; margin-top: 30px; max-width: 1100px; font-weight: 300; }
+  .divider { width: 80px; height: 3px; background: linear-gradient(90deg, #3B82F6, transparent);
+             margin: 36px auto 0; border-radius: 2px; }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="glow g1"></div><div class="glow g2"></div>
+  <div class="cover-frame"></div>
+  <div class="corner tl"></div><div class="corner br"></div>
+  <div class="content-zone">
+    <div class="label">KNOWLEDGE SHARING</div>
+    <h1 class="title">{{title}}</h1>
+    <p class="subtitle">{{subtitle}}</p>
+    <div class="divider"></div>
+  </div>
+</div>
+</body>
+</html>

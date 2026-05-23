@@ -1,0 +1,372 @@
+{
+  "1": {
+    "narration": "大家好，今天给你看一个我做的工具。只需告诉它一个主题，就能自动生成一条完整的口播知识分享视频——从脚本、PPT、配音到字幕，全自动完成。",
+    "word_timings": [
+      {
+        "text": "大家好，",
+        "offset": 0.1,
+        "duration": 0.735
+      },
+      {
+        "text": "今天给你看一个我做的工具。",
+        "offset": 0.835,
+        "duration": 2.39
+      },
+      {
+        "text": "只需告诉它一个主题，",
+        "offset": 3.175,
+        "duration": 1.902
+      },
+      {
+        "text": "就能自动生成一条完整的口播知识分享视频——从脚本、",
+        "offset": 5.077,
+        "duration": 4.755
+      },
+      {
+        "text": "PPT、",
+        "offset": 9.832,
+        "duration": 0.761
+      },
+      {
+        "text": "配音到字幕，",
+        "offset": 10.593,
+        "duration": 1.141
+      },
+      {
+        "text": "全自动完成。",
+        "offset": 11.734,
+        "duration": 1.141
+      }
+    ]
+  },
+  "2": {
+    "narration": "先说说痛点。做一个知识分享视频，传统流程至少四步：写脚本磨半天，排版 PPT 又半天，录音一旦嘴瓢就得重来，最后剪辑还得手动对齐音画。一个三分钟的视频，前前后后花三四个小时很正常。",
+    "word_timings": [
+      {
+        "text": "先说说痛点。",
+        "offset": 0.1,
+        "duration": 1.575
+      },
+      {
+        "text": "做一个知识分享视频，",
+        "offset": 1.625,
+        "duration": 1.939
+      },
+      {
+        "text": "传统流程至少四步：",
+        "offset": 3.564,
+        "duration": 1.745
+      },
+      {
+        "text": "写脚本磨半天，",
+        "offset": 5.308,
+        "duration": 1.357
+      },
+      {
+        "text": "排版 PPT 又半天，",
+        "offset": 6.665,
+        "duration": 2.132
+      },
+      {
+        "text": "录音一旦嘴瓢就得重来，",
+        "offset": 8.798,
+        "duration": 2.132
+      },
+      {
+        "text": "最后剪辑还得手动对齐音画。",
+        "offset": 10.93,
+        "duration": 2.52
+      },
+      {
+        "text": "一个三分钟的视频，",
+        "offset": 13.45,
+        "duration": 1.996
+      },
+      {
+        "text": "前前后后花三四个小时很正常。",
+        "offset": 15.446,
+        "duration": 3.104
+      }
+    ]
+  },
+  "3": {
+    "narration": "那有没有办法把这件事全部自动化？我基于 Claude Code Skill 机制，做了这样一个工具。",
+    "word_timings": [
+      {
+        "text": "那有没有办法把这件事全部自动化？",
+        "offset": 0.1,
+        "duration": 3.312
+      },
+      {
+        "text": "我基于 Claude Code Skill 机制，",
+        "offset": 3.362,
+        "duration": 2.996
+      },
+      {
+        "text": "做了这样一个工具。",
+        "offset": 6.358,
+        "duration": 1.079
+      }
+    ]
+  },
+  "4": {
+    "narration": "工作流的第一步是智能提问。它会像记者一样，通过四轮十多个问题，帮你明确主题、受众、内容结构和视觉风格。你只需要回答选择题和简单文本，不需要从头构思。",
+    "word_timings": [
+      {
+        "text": "工作流的第一步是智能提问。",
+        "offset": 0.1,
+        "duration": 2.612
+      },
+      {
+        "text": "它会像记者一样，",
+        "offset": 2.662,
+        "duration": 1.708
+      },
+      {
+        "text": "通过四轮十多个问题，",
+        "offset": 4.37,
+        "duration": 2.135
+      },
+      {
+        "text": "帮你明确主题、",
+        "offset": 6.505,
+        "duration": 1.494
+      },
+      {
+        "text": "受众、",
+        "offset": 7.999,
+        "duration": 0.64
+      },
+      {
+        "text": "内容结构和视觉风格。",
+        "offset": 8.64,
+        "duration": 2.135
+      },
+      {
+        "text": "你只需要回答选择题和简单文本，",
+        "offset": 10.775,
+        "duration": 3.277
+      },
+      {
+        "text": "不需要从头构思。",
+        "offset": 14.052,
+        "duration": 1.748
+      }
+    ]
+  },
+  "5": {
+    "narration": "第二步是自动管线。脚本确定后，HTML 模板渲染成高清 PNG，edge-tts 生成带词级时间戳的配音，最后用 ffmpeg 合成——页间淡入淡出转场，字幕直接烧入视频，音画精准同步。",
+    "word_timings": [
+      {
+        "text": "第二步是自动管线。",
+        "offset": 0.1,
+        "duration": 2.087
+      },
+      {
+        "text": "脚本确定后，",
+        "offset": 2.137,
+        "duration": 1.068
+      },
+      {
+        "text": "HTML 模板渲染成高清 PNG，",
+        "offset": 3.205,
+        "duration": 3.026
+      },
+      {
+        "text": "edge-tts 生成带词级时间戳的配音，",
+        "offset": 6.23,
+        "duration": 3.737
+      },
+      {
+        "text": "最后用 ffmpeg 合成——页间淡入淡出转场，",
+        "offset": 9.968,
+        "duration": 4.271
+      },
+      {
+        "text": "字幕直接烧入视频，",
+        "offset": 14.239,
+        "duration": 1.602
+      },
+      {
+        "text": "音画精准同步。",
+        "offset": 15.841,
+        "duration": 1.246
+      }
+    ]
+  },
+  "6": {
+    "narration": "目前内置了三套视觉模板。现代极简适合技术内容，温暖柔和适合人文教育，赛博科技就是你现在看到的这套。每套模板五种页型，覆盖封面、章节、正文、金句和收尾。",
+    "word_timings": [
+      {
+        "text": "目前内置了三套视觉模板。",
+        "offset": 0.1,
+        "duration": 2.887
+      },
+      {
+        "text": "现代极简适合技术内容，",
+        "offset": 2.937,
+        "duration": 2.39
+      },
+      {
+        "text": "温暖柔和适合人文教育，",
+        "offset": 5.327,
+        "duration": 2.39
+      },
+      {
+        "text": "赛博科技就是你现在看到的这套。",
+        "offset": 7.716,
+        "duration": 3.259
+      },
+      {
+        "text": "每套模板五种页型，",
+        "offset": 10.975,
+        "duration": 2.41
+      },
+      {
+        "text": "覆盖封面、",
+        "offset": 13.385,
+        "duration": 1.339
+      },
+      {
+        "text": "章节、",
+        "offset": 14.724,
+        "duration": 0.803
+      },
+      {
+        "text": "正文、",
+        "offset": 15.527,
+        "duration": 0.803
+      },
+      {
+        "text": "金句和收尾。",
+        "offset": 16.33,
+        "duration": 1.607
+      }
+    ]
+  },
+  "7": {
+    "narration": "这个工具有一个核心理念：所有中间产物都是可读文件。slides.json 控制内容，word_timings.json 控制时间线。你想调某页的口播，改一句话重新跑就行，不用从头再来。",
+    "word_timings": [
+      {
+        "text": "这个工具有一个核心理念：",
+        "offset": 0.1,
+        "duration": 2.502
+      },
+      {
+        "text": "所有中间产物都是可读文件。",
+        "offset": 2.602,
+        "duration": 2.71
+      },
+      {
+        "text": "slides.",
+        "offset": 5.262,
+        "duration": 1.082
+      },
+      {
+        "text": "json 控制内容，",
+        "offset": 6.344,
+        "duration": 1.546
+      },
+      {
+        "text": "word_timings.",
+        "offset": 7.89,
+        "duration": 2.01
+      },
+      {
+        "text": "json 控制时间线。",
+        "offset": 9.9,
+        "duration": 1.7
+      },
+      {
+        "text": "你想调某页的口播，",
+        "offset": 11.6,
+        "duration": 1.778
+      },
+      {
+        "text": "改一句话重新跑就行，",
+        "offset": 13.378,
+        "duration": 1.976
+      },
+      {
+        "text": "不用从头再来。",
+        "offset": 15.354,
+        "duration": 1.383
+      }
+    ]
+  },
+  "8": {
+    "narration": "它不是市面上那种套模板的在线工具。这是一条开源的代码管线，你在本地跑，数据不外传。每条视频 1080p 输出，中间每个环节都可以手动微调。你控制一切。",
+    "word_timings": [
+      {
+        "text": "它不是市面上那种套模板的在线工具。",
+        "offset": 0.1,
+        "duration": 3.612
+      },
+      {
+        "text": "这是一条开源的代码管线，",
+        "offset": 3.662,
+        "duration": 2.519
+      },
+      {
+        "text": "你在本地跑，",
+        "offset": 6.181,
+        "duration": 1.259
+      },
+      {
+        "text": "数据不外传。",
+        "offset": 7.44,
+        "duration": 1.259
+      },
+      {
+        "text": "每条视频 1080p 输出，",
+        "offset": 8.7,
+        "duration": 2.756
+      },
+      {
+        "text": "中间每个环节都可以手动微调。",
+        "offset": 11.456,
+        "duration": 2.756
+      },
+      {
+        "text": "你控制一切。",
+        "offset": 14.212,
+        "duration": 2.0
+      }
+    ]
+  },
+  "9": {
+    "narration": "获取方式很简单。这是一个开源的 Claude Code Skill。装好依赖后，在 Claude Code 里直接说——做一期讲某主题的口播视频——剩下的全部自动完成。我是 Forward，下期见。",
+    "word_timings": [
+      {
+        "text": "获取方式很简单。",
+        "offset": 0.1,
+        "duration": 2.075
+      },
+      {
+        "text": "这是一个开源的 Claude Code Skill。",
+        "offset": 2.125,
+        "duration": 3.037
+      },
+      {
+        "text": "装好依赖后，",
+        "offset": 5.162,
+        "duration": 0.926
+      },
+      {
+        "text": "在 Claude Code 里直接说——做一期讲某主题的口播视频——剩下的全部自动完成。",
+        "offset": 6.088,
+        "duration": 6.787
+      },
+      {
+        "text": "我是 Forward，",
+        "offset": 12.875,
+        "duration": 2.209
+      },
+      {
+        "text": "下期见。",
+        "offset": 15.084,
+        "duration": 0.803
+      }
+    ]
+  }
+}
