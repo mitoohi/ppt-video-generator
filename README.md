@@ -12,7 +12,7 @@
 
 **完整工作流**：`问需求 → 写脚本 → 渲染 PPT → 合成 TTS → 规划时间线 → 渲染视频`
 
-**生成样例**：![auto-video-skill-demo](auto-video-skill-demo/final.mp4)
+**生成样例**：[![auto-video-skill-demo](auto-video-skill-demo/jietu.png)](auto-video-skill-demo/final.mp4)
 
 ---
 
